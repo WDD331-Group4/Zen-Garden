@@ -1,9 +1,9 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-
-// color palette - these colors will be the color swatches of the Colors section
 @import 'partials/colors';
+@import 'partials/fonts';
+
 
 
 
@@ -20,55 +20,242 @@
 
 
 /* basic elements */
+
+.intro {
+	color: $color-4;
+
+	header {
+		background-color: $color-1;
+		text-align: center;
+		border: .3em solid white;
+
+		h1 {
+			font-size: 3em;
+		}
+
+		h2 {
+			font-size: 1.5em;
+			margin-top: -.8em;
+		}
+	}
+}
+
+.summary {
+	padding: 2em;
+}
+
+.preamble {
+	border-top: $border-1;
+	border-right: $border-1;
+	border-bottom: $border-1;
+	padding-bottom: 2em;
+
+	h3 {
+		padding-top: 1em;
+	}
+
+	p {
+		padding: 1em 2em 1em 2em;
+	}
+}
+
+.explanation {
+	border-left: $border-1;
+	border-bottom: $border-1;
+	padding-bottom: 2em;
+
+	h3 {
+		padding-top: 1.5em;
+	}
+
+	p {
+		padding: 1em 2em 1em 2em;
+	}
+}
+
+.participation {
+	border-right: $border-1;
+	border-bottom: $border-1;
+	padding-bottom: 2em;
+
+	h3 {
+		padding-top: 2em;
+	}
+
+	p {
+		padding: 1em 2em 1em 2em;
+	}
+}
+
+.benefits {
+	border-left: $border-1;
+	border-bottom: $border-1;
+	padding-bottom: 2em;
+
+	h3 {
+		padding-top: 2em;
+	}
+
+	p {
+		padding: 1em 2em 1em 2em;
+	}
+}
+
+.requirements {
+	border-right: $border-1;
+	border-bottom: $border-1;
+	padding-bottom: 2em;
+
+	h3 {
+		padding-top: 2em;
+	}
+
+	p {
+		padding: 1em 2em 1em 2em;
+	}
+}
+
 html {
 	margin: 0;
 	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
+}
+
+body {
+	font: 75% $font-1;
 	line-height: 1.88889;
-	color: $color-1; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
+	color: $color-1;
+	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+	margin: 0;
 	padding: 0;
-	}
-p { 
-	margin-top: 0; 
+}
+
+p {
+	margin-top: 0;
 	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
+	color: $color-4;
+}
+
+h3 {
+	font: italic normal 1.4em $font-1;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+	color: $color-2;
+	padding-left: 1em
+}
+
+a:link {
+	font-weight: bold;
+	text-decoration: none;
 	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
+}
+
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
 	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: underline;
 	color: #9685BA;
-	}
+}
+
 abbr {
 	border-bottom: none;
-	}
+}
 
 
 /* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
+.page-wrapper {
+	padding: 0 50px 0 50px;
+	margin: 0;
 	position: relative;
+	background-color: $color-6;
+}
+
+.zen-resources {
+	background-color: rgb(88, 88, 88);
+
+	ul {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(5, 25%);
+		padding: 1em;
+
+
+		.li:nth-child(2) {
+			grid-row: 3;
+			grid-column: 1;
+			color: red;
+		}
+
+		.li:nth-child(3) {
+			grid-row: 4;
+			grid-column: 1;
+		}
+
+		.li:nth-child(4) {
+			grid-row: 5;
+			grid-column: 1;
+		}
+
+		.li:nth-child(5) {
+			grid-row: 3;
+			grid-column: 2;
+		}
+
+		.li:nth-child(6) {
+			grid-row: 4;
+			grid-column: 2;
+		}
+	}
+}
+
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+	a {
+		color: $color-4;
+		opacity: 100%;
+		padding-left: 1em;
+	}
+}
+
+.design-selection {
+
+	h3 {
+		padding-top: 2em;
 	}
 
+	li {
+		padding: 0 2em 0 2em;
+	}
+}
+
+.design-archives {
+	padding: 0 0 2em 0;
+
+	h3 {
+		padding-top: 2em;
+	}
+
+	li {
+		padding: 0 2em 0 2em;
+	}
+}
+
+footer {
+	padding: 2em;
+}
+
+
+
+
+/*
 .intro { 
 	min-width: 470px;
 	width: 100%;
@@ -203,3 +390,5 @@ footer a:link, footer a:visited {
 	width: 148px; 
 	height: 110px;
 	}
+
+	*/
