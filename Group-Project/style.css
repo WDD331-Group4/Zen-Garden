@@ -195,7 +195,6 @@ abbr {
 .page-wrapper {
   padding: 0 50px 0 50px;
   margin: 0;
-  position: relative;
   background-color: #303131;
 }
 
@@ -211,7 +210,6 @@ abbr {
 .zen-resources ul .li:nth-child(2) {
   grid-row: 3;
   grid-column: 1;
-  color: red;
 }
 .zen-resources ul .li:nth-child(3) {
   grid-row: 4;
@@ -237,7 +235,6 @@ abbr {
 .zen-translations a {
   color: #FFFFFF;
   opacity: 100%;
-  padding-left: 1em;
 }
 
 .design-selection h3 {
@@ -248,13 +245,27 @@ abbr {
 }
 
 .design-archives {
-  padding: 0 0 2em 0;
+  padding: 0 0 5em 0;
 }
 .design-archives h3 {
   padding-top: 2em;
 }
 .design-archives li {
   padding: 0 2em 0 2em;
+}
+
+.viewall {
+  display: grid;
+  background-color: #FBB831;
+  height: 5em;
+  outline: solid 0.2em #000000;
+  outline-offset: -5px;
+}
+.viewall a {
+  color: #303131;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  align-self: center;
 }
 
 footer {
