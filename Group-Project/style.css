@@ -238,25 +238,373 @@ abbr {
 }
 
 .design-selection{
+  
   background:url(../Group-Project/images/road-sign.svg);
   height:900px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  /*
-  display:grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;*/
-  justify-items: center;
-  /*align-items: center; alighns h3 to center*/
+  
+ 
 
-  
-/*I will delete this once finished. I am using it to troubleshooot*/
-  border: red 2px solid;
 }
-.li :nth-child(2) {
-  grid-column: 3 ;
-  
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Overpass:800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+/* basic elements */
+.intro {
+  color: #FFFFFF;
+}
+.intro header {
+  background-color: #33A532;
+  text-align: center;
+  border: 0.3em solid white;
+}
+.intro header h1 {
+  font-size: 3em;
+}
+.intro header h2 {
+  font-size: 1.5em;
+  margin-top: -0.8em;
+}
+
+.summary {
+  padding: 2em;
+}
+
+.preamble {
+  border-top: dashed 0.3em #FBB831;
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
+  padding-bottom: 2em;
+}
+.preamble h3 {
+  padding-top: 1em;
+}
+.preamble p {
+  padding: 1em 2em 1em 2em;
+}
+
+.explanation {
+  border-left: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
+  padding-bottom: 2em;
+}
+.explanation h3 {
+  padding-top: 1.5em;
+}
+.explanation p {
+  padding: 1em 2em 1em 2em;
+}
+
+.participation {
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
+  padding-bottom: 2em;
+}
+.participation h3 {
+  padding-top: 2em;
+}
+.participation p {
+  padding: 1em 2em 1em 2em;
+}
+
+.benefits {
+  border-left: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
+  padding-bottom: 2em;
+}
+.benefits h3 {
+  padding-top: 2em;
+}
+.benefits p {
+  padding: 1em 2em 1em 2em;
+}
+
+.requirements {
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
+  padding-bottom: 2em;
+}
+.requirements h3 {
+  padding-top: 2em;
+}
+.requirements p {
+  padding: 1em 2em 1em 2em;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 75% "Overpass", sans-serif;
+  line-height: 1.88889;
+  color: #33A532;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+h3 {
+  font: italic normal 1.4em "Overpass", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  color: #FAD201;
+  padding-left: 1em;
+}
+
+a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #B7A5DF;
+}
+
+a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #D4CDDC;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration: underline;
+  color: #9685BA;
+}
+
+abbr {
+  border-bottom: none;
+}
+
+.page-wrapper {
+  padding: 0 50px 0 50px;
+  margin: 0;
+  background-color: #303131;
+}
+
+.zen-resources {
+  background-color: #585858;
+}
+.zen-resources ul {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, 25%);
+  padding: 1em;
+}
+.zen-resources ul .li:nth-child(2) {
+  grid-row: 3;
+  grid-column: 1;
+}
+.zen-resources ul .li:nth-child(3) {
+  grid-row: 4;
+  grid-column: 1;
+}
+.zen-resources ul .li:nth-child(4) {
+  grid-row: 5;
+  grid-column: 1;
+}
+.zen-resources ul .li:nth-child(5) {
+  grid-row: 3;
+  grid-column: 2;
+}
+.zen-resources ul .li:nth-child(6) {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+.view-css a,
+.css-resources a,
+.zen-faq a,
+.zen-submit a,
+.zen-translations a {
+  color: #FFFFFF;
+  opacity: 100%;
+}
+
+.design-selection{
+  background:url(../Group-Project/images/road-sign.svg);
+  height:1000px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+.design-selection :nth-child(2) {
+  text-align: center; 
+}
+.design-selection :nth-child(3) {
+  text-align: center;
+}
+.design-selection :nth-child(4) {
+  text-align: center;
+}
+.design-selection :nth-child(5) {
+  text-align: center;
+}
+.design-selection :nth-child(6) {
+  text-align: center;
+}
+.design-selection :nth-child(7) {
+  text-align: center;
+}
+.design-selection :nth-child(8) {
+  text-align: center;
+}
+.design-selection :nth-child(9) {
+  text-align: center;
+}
+.design-selection h3 {
+  padding-top: 2em;
+  text-align: center;
+}
+.design-selection li {
+  padding: 0 2em 0 2em;
+ }
+.design-archives {
+  padding: 0 0 5em 0;
+}
+
+
+.viewall {
+  display: grid;
+  background-color: #FBB831;
+  height: 5em;
+  outline: solid 0.2em #000000;
+  outline-offset: -5px;
+}
+.viewall a {
+  color: #303131;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  align-self: center;
+}
+
+footer {
+  padding: 3em 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+footer :nth-child(1) {
+  grid-column: 1;
+  width: 4.5em;
+  height: 4.5em;
+  background: #33A532;
+  color: #303131;
+  border-radius: 50%;
+  line-height: 4.5em;
+  text-align: center;
+}
+footer :nth-child(2) {
+  grid-column: 2;
+  width: 4.5em;
+  height: 4.5em;
+  background: #FAD201;
+  color: #303131;
+  border-radius: 50%;
+  line-height: 4.5em;
+  text-align: center;
+}
+footer :nth-child(3) {
+  grid-column: 3;
+  width: 4.5em;
+  height: 4.5em;
+  background: #CC0605;
+  color: #FFFFFF;
+  border-radius: 50%;
+  line-height: 4.5em;
+  text-align: center;
+}
+footer :nth-child(4) {
+  grid-column: 4;
+  width: 4.5em;
+  height: 4.5em;
+  background: #FAD201;
+  color: #303131;
+  border-radius: 50%;
+  line-height: 4.5em;
+  text-align: center;
+}
+footer :nth-child(5) {
+  grid-column: 5;
+  width: 4.5em;
+  height: 4.5em;
+  background: #33A532;
+  color: #303131;
+  border-radius: 50%;
+  line-height: 4.5em;
+  text-align: center;
 }
 .design-selection h3 {
   padding-top: 2em;
