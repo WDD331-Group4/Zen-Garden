@@ -54,13 +54,6 @@ table {
   border-spacing: 0;
 }
 
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-/* basic elements */
 .page-wrapper {
   padding: 0 2em 0 2em;
   margin: 0;
@@ -206,8 +199,8 @@ abbr {
   background-color: #585858;
   text-transform: uppercase;
   padding-top: 2em;
-  margin-left: -2em;
-  margin-right: -2em;
+  margin-left: 0;
+  margin-right: 0;
 }
 .zen-resources ul {
   display: grid;
@@ -248,49 +241,54 @@ abbr {
 }
 
 .design-selection {
+  display: block;
   background: url(../Group-Project/images/road-sign.svg);
-  height: 1000px;
+  height: 100em;
+  width: 35em;
+  margin: -10em 5em 0 2em;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  color: #000000;
 }
-.design-selection .design-selection h3 {
-  padding-top: 2em;
+.design-selection a {
+  color: #000000;
+}
+.design-selection h3 {
+  padding: 10em 3em 1em 0;
   text-align: center;
+  font-size: 2em;
 }
 .design-selection li {
-  padding: 0 2em 0 2em;
+  text-align: center;
+  font-size: 0.75em;
+  padding: 0 3em 0 0;
+  margin: 1em 3em 5em 0;
 }
 .design-selection :nth-child(2) {
-  text-align: center;
+  margin: 0 0 5em 0;
 }
 .design-selection :nth-child(3) {
-  text-align: center;
+  margin: 1em 2em 5.5em 0;
 }
 .design-selection :nth-child(4) {
-  text-align: center;
+  margin: 1em 0 5.5em 3em;
 }
 .design-selection :nth-child(5) {
-  text-align: center;
+  margin: 1em 3em 5em 0;
 }
 .design-selection :nth-child(6) {
-  text-align: center;
+  margin: 1em 0 5.5em 0;
 }
 .design-selection :nth-child(7) {
-  text-align: center;
+  margin: 1em 5em 5.5em 0;
 }
 .design-selection :nth-child(8) {
-  text-align: center;
-}
-.design-selection :nth-child(9) {
-  text-align: center;
+  margin: 1em 0 5.5em 0;
 }
 
 .design-archives {
   padding: 0 0 5em 0;
-}
-.design-archives h3 {
-  padding-top: 2em;
 }
 .design-archives li {
   padding: 0 2em 0 2em;
@@ -302,6 +300,7 @@ abbr {
   height: 5em;
   outline: solid 0.2em #000000;
   outline-offset: -5px;
+  margin: -95em 0 0 0;
 }
 .viewall a {
   color: #303131;
