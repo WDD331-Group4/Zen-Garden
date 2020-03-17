@@ -34,34 +34,35 @@ p {
 }
 
 h3 {
-	font: italic normal 1.4em $font-1;
+	font: normal 1.4em $color-7;
 	letter-spacing: 1px;
 	margin-bottom: 0;
-	color: $color-2;
+	color: $color-7;
 	padding-left: 1em
 }
 
 a:link {
 	font-weight: bold;
 	text-decoration: none;
-	color: #B7A5DF;
+	color: $color-1;
 }
 
 a:visited {
 	font-weight: bold;
 	text-decoration: none;
-	color: #D4CDDC;
+	color: $color-3;
 }
 
 a:hover,
 a:focus,
 a:active {
 	text-decoration: underline;
-	color: #9685BA;
+	color: $color-2;
 }
 
 abbr {
 	border-bottom: none;
+    text-decoration: none;
 }
 
 .intro {
@@ -221,10 +222,10 @@ abbr {
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	color: $color-8;
+	color: $color-4;
 
 	a {
-		color: $color-8;
+		color: $color-4;
 	}
 
 	h3 {
@@ -332,7 +333,7 @@ footer {
 		width: $circle-width;
 		height: $circle-height;
 		background: $color-3;
-		color: $color-4;
+		color: $color-6;
 		border-radius: 50%;
 		line-height: $circle-line-height;
 		text-align: center;
@@ -427,7 +428,6 @@ footer {
 
 	footer {
 		padding: 5em 0 0 0;
-		background: $color-5;
 		width: 100%;
 		height: auto;
 		padding-left: 0;

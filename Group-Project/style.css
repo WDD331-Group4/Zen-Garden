@@ -83,34 +83,35 @@ p {
 }
 
 h3 {
-  font: italic normal 1.4em "Overpass", sans-serif;
+  font: normal 1.4em #FBB831;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #FAD201;
+  color: #FBB831;
   padding-left: 1em;
 }
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #B7A5DF;
+  color: #33A532;
 }
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #D4CDDC;
+  color: #CC0605;
 }
 
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: #9685BA;
+  color: #FAD201;
 }
 
 abbr {
   border-bottom: none;
+  text-decoration: none;
 }
 
 .intro {
@@ -249,10 +250,10 @@ abbr {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  color: #000000;
+  color: #FFFFFF;
 }
 .design-selection a {
-  color: #000000;
+  color: #FFFFFF;
 }
 .design-selection h3 {
   padding: 10em 3em 1em 0;
@@ -346,7 +347,7 @@ footer :nth-child(3) {
   width: 4.5em;
   height: 4.5em;
   background: #CC0605;
-  color: #FFFFFF;
+  color: #303131;
   border-radius: 50%;
   line-height: 4.5em;
   text-align: center;
@@ -430,7 +431,6 @@ footer :nth-child(5) {
 
   footer {
     padding: 5em 0 0 0;
-    background: #B2B0AF;
     width: 100%;
     height: auto;
     padding-left: 0;
