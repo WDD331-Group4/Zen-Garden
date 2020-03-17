@@ -83,7 +83,7 @@ p {
 }
 
 h3 {
-  font: normal 1.4em #FBB831;
+  font: normal 1.7em "Overpass", sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #FBB831;
@@ -136,9 +136,9 @@ abbr {
 }
 
 .preamble {
-  border-top: dashed 0.3em #FBB831;
-  border-right: dashed 0.3em #FBB831;
-  border-bottom: dashed 0.3em #FBB831;
+  border-top: dashed 0.3em #FFFFFF;
+  border-right: dashed 0.3em #FFFFFF;
+  border-bottom: dashed 0.3em #FFFFFF;
   padding-bottom: 2em;
 }
 .preamble h3 {
@@ -146,11 +146,12 @@ abbr {
 }
 .preamble p {
   padding: 1em 2em 1em 2em;
+  color: #B2B0AF;
 }
 
 .explanation {
-  border-left: dashed 0.3em #FBB831;
-  border-bottom: dashed 0.3em #FBB831;
+  border-left: dashed 0.3em #FFFFFF;
+  border-bottom: dashed 0.3em #FFFFFF;
   padding-bottom: 2em;
 }
 .explanation h3 {
@@ -158,11 +159,12 @@ abbr {
 }
 .explanation p {
   padding: 1em 2em 1em 2em;
+  color: #B2B0AF;
 }
 
 .participation {
-  border-right: dashed 0.3em #FBB831;
-  border-bottom: dashed 0.3em #FBB831;
+  border-right: dashed 0.3em #FFFFFF;
+  border-bottom: dashed 0.3em #FFFFFF;
   padding-bottom: 2em;
 }
 .participation h3 {
@@ -170,11 +172,12 @@ abbr {
 }
 .participation p {
   padding: 1em 2em 1em 2em;
+  color: #B2B0AF;
 }
 
 .benefits {
-  border-left: dashed 0.3em #FBB831;
-  border-bottom: dashed 0.3em #FBB831;
+  border-left: dashed 0.3em #FFFFFF;
+  border-bottom: dashed 0.3em #FFFFFF;
   padding-bottom: 2em;
 }
 .benefits h3 {
@@ -182,11 +185,12 @@ abbr {
 }
 .benefits p {
   padding: 1em 2em 1em 2em;
+  color: #B2B0AF;
 }
 
 .requirements {
-  border-right: dashed 0.3em #FBB831;
-  border-bottom: dashed 0.3em #FBB831;
+  border-right: dashed 0.3em #FFFFFF;
+  border-bottom: dashed 0.3em #FFFFFF;
   padding-bottom: 2em;
 }
 .requirements h3 {
@@ -194,6 +198,7 @@ abbr {
 }
 .requirements p {
   padding: 1em 2em 1em 2em;
+  color: #B2B0AF;
 }
 
 .zen-resources {
