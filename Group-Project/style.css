@@ -377,6 +377,15 @@ footer :nth-child(5) {
   line-height: 4.5em;
   text-align: center;
 }
+footer a {
+  transition: 0.3s;
+}
+footer a:hover {
+  color: #B2B0AF;
+  transform: scale(1.2);
+  box-shadow: 0 0 20px #33A532;
+  text-shadow: 0 0 15px #33A532;
+}
 
 .zen-resources {
   background-color: #303131;

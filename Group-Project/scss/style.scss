@@ -366,6 +366,17 @@ footer {
 		line-height: $circle-line-height;
 		text-align: center;
 	}
+	a  {
+		transition: .3s;
+	}
+
+	a:hover {
+		color: $color-5;
+		transform: scale(1.2);
+
+		box-shadow: 0 0 20px $color-1;
+		text-shadow: 0 0 15px $color-1;
+	 }
 }
 
 .zen-resources {
