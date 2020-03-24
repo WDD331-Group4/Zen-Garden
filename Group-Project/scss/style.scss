@@ -366,14 +366,40 @@ footer {
 		line-height: $circle-line-height;
 		text-align: center;
 	}
-	a  {
-		transition: .3s;
-	}
+	
 
-	a:hover {
+	.zen-validate-html:hover {
 		color: $color-5;
 		transform: scale(1.2);
-
+		transition: .3s;
+		box-shadow: 0 0 20px $color-1;
+		text-shadow: 0 0 15px $color-1;
+	 }
+	 .zen-validate-css:hover {
+		color: $color-5;
+		transform: scale(1.2);
+		transition: .3s;
+		box-shadow: 0 0 20px $color-2;
+		text-shadow: 0 0 15px $color-1;
+	 }
+	 .zen-license:hover {
+		color: $color-5;
+		transform: scale(1.2);
+		transition: .3s;
+		box-shadow: 0 0 20px $color-3;
+		text-shadow: 0 0 15px $color-1;
+	 }
+	 .zen-accessibility:hover {
+		color: $color-5;
+		transform: scale(1.2);
+		transition: .3s;
+		box-shadow: 0 0 20px $color-2;
+		text-shadow: 0 0 15px $color-1;
+	 }
+	 .zen-github:hover {
+		color: $color-5;
+		transform: scale(1.2);
+		transition: .3s;
 		box-shadow: 0 0 20px $color-1;
 		text-shadow: 0 0 15px $color-1;
 	 }
