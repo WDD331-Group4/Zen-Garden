@@ -73,7 +73,7 @@ abbr {
 	header {
 		background-color: $color-1;
 		text-align: center;
-		border: .3em solid white;
+		border: .3em solid $color-4;
 
 		h1 {
 			font-size: 3em;
@@ -167,7 +167,7 @@ abbr {
 }
 
 .zen-resources {
-	background-color: rgb(88, 88, 88);
+	background-color: $color-6;
 	text-transform: uppercase;
 	padding-top: 2em;
 	margin-left: 0;
@@ -224,7 +224,7 @@ abbr {
 	background: url(../Group-Project/images/road-sign.svg);
 	height: 100em;
 	width: 35em;
-	margin: -10em 5em 0 2em;
+	margin: -15em 5em -22em 3em;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -235,7 +235,7 @@ abbr {
 	}
 
 	h3 {
-		padding: 10em 3em 1em 0;
+		padding: 10em 2em 1em 0;
 		text-align: center;
 		font-size: 2em;
 	}
@@ -290,8 +290,9 @@ abbr {
 	height: 5em;
 	outline: solid .2em $color-8;
 	outline-offset: -5px;
-	margin: -95em 0 0 0;
+	margin: -69em 0 0 0;
 	border-radius: .4em;
+	text-align: center;
 
 	a {
 		color: $color-6;
@@ -448,7 +449,7 @@ footer {
 		grid-row: 2;
 
 		.design-selection {
-			margin: 0 0 0 7em;
+			margin: 0 0 0 10em;
 		}
 
 		.design-archives {
@@ -465,7 +466,7 @@ footer {
 
 		.viewall {
 			width: 50%;
-			margin: -77em 0 0 8em;
+			margin: -78em 0 0 11em;
 		}
 	}
 
