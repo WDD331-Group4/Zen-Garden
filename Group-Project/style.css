@@ -86,7 +86,7 @@ h3 {
   font: normal 1.7em "Overpass", sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
-  color: #FBB831;
+  color: #FFFFFF;
   padding-left: 1em;
 }
 
@@ -121,6 +121,7 @@ abbr {
 .intro header {
   background-color: #33A532;
   text-align: center;
+  border-radius: 0.4em;
   border: 0.3em solid #FFFFFF;
 }
 .intro header h1 {
@@ -136,9 +137,9 @@ abbr {
 }
 
 .preamble {
-  border-top: dashed 0.3em #FFFFFF;
-  border-right: dashed 0.3em #FFFFFF;
-  border-bottom: dashed 0.3em #FFFFFF;
+  border-top: dashed 0.3em #FBB831;
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
   padding-bottom: 2em;
 }
 .preamble h3 {
@@ -150,8 +151,8 @@ abbr {
 }
 
 .explanation {
-  border-left: dashed 0.3em #FFFFFF;
-  border-bottom: dashed 0.3em #FFFFFF;
+  border-left: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
   padding-bottom: 2em;
 }
 .explanation h3 {
@@ -163,8 +164,8 @@ abbr {
 }
 
 .participation {
-  border-right: dashed 0.3em #FFFFFF;
-  border-bottom: dashed 0.3em #FFFFFF;
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
   padding-bottom: 2em;
 }
 .participation h3 {
@@ -176,8 +177,8 @@ abbr {
 }
 
 .benefits {
-  border-left: dashed 0.3em #FFFFFF;
-  border-bottom: dashed 0.3em #FFFFFF;
+  border-left: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
   padding-bottom: 2em;
 }
 .benefits h3 {
@@ -189,8 +190,8 @@ abbr {
 }
 
 .requirements {
-  border-right: dashed 0.3em #FFFFFF;
-  border-bottom: dashed 0.3em #FFFFFF;
+  border-right: dashed 0.3em #FBB831;
+  border-bottom: dashed 0.3em #FBB831;
   padding-bottom: 2em;
 }
 .requirements h3 {
@@ -242,7 +243,7 @@ abbr {
 .zen-faq a,
 .zen-submit a,
 .zen-translations a {
-  color: #FFFFFF;
+  color: #33A532;
   opacity: 100%;
 }
 
@@ -251,7 +252,7 @@ abbr {
   background: url(../Group-Project/images/road-sign.svg);
   height: 100em;
   width: 35em;
-  margin: -15em 5em -22em 3em;
+  margin: -15em 5em -22em -2em;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -419,12 +420,6 @@ footer .zen-github:hover {
   text-transform: uppercase;
   padding-top: 2em;
 }
-.zen-resources h3 {
-  margin-left: 12em;
-}
-.zen-resources ul {
-  margin-left: 6em;
-}
 .zen-resources footer {
   padding: 5em 0 0 0;
 }
@@ -454,20 +449,40 @@ footer .zen-github:hover {
     grid-row: 2;
   }
   .sidebar .design-selection {
-    margin: 0 0 0 10em;
+    margin: 0 0 0 2em;
   }
   .sidebar .design-archives {
     margin: -20em 0 0 0;
   }
   .sidebar .archives {
-    margin-left: 13em;
+    text-align: center;
+    padding: 0;
   }
   .sidebar .next {
-    margin-left: 18em;
+    margin-left: 8em;
+    text-align: center;
+    background-color: #33A532;
+    width: 200px;
+    border: 0.2em solid #FFFFFF;
+    border-radius: 0.4em;
+  }
+  .sidebar .next a {
+    font-size: 2em;
+    margin-left: 10px;
+    color: #FFFFFF;
   }
   .sidebar .viewall {
     width: 50%;
-    margin: -78em 0 0 11em;
+    margin: -78em 0 0 6.5em;
+  }
+
+  .zen-resources h3 {
+    padding: 1em;
+    text-align: center;
+  }
+  .zen-resources ul {
+    margin-left: 7em;
+    font-size: 0.9em;
   }
 
   footer {
